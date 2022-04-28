@@ -1,0 +1,62 @@
+<%-include("partials/headerStore")-%>
+
+  <div class="medicineList">
+    <h3>Antipyretics</h3>
+    <% antipyretics.forEach(function(element) { %>
+      <div class="medicine" style="display: inline-block">
+        <p><%= element %>, </p>
+      </div>
+    <% }); %>
+  </div>
+
+  <div class="medicineList">
+    <h3>Analgesics</h3>
+    <% analgesics.forEach(function(element) { %>
+      <div class="medicine">
+        <p><%= element %>, </p>
+
+      </div>
+    <% }); %>
+  </div>
+
+  <div class="medicineList">
+    <h3>Antifungal</h3>
+    <%antifungal.forEach(function(element) {%>
+      <div class="medicine">
+      <p><%= element %>, </p>
+
+      </div>
+  <%  });%>
+  </div>
+
+  <div class="medicineList">
+    <h3>Antiseptics</h3>
+    <%antiseptics.forEach(function(element) {%>
+      <div class="medicine">
+        <p><%= element %>, </p>
+
+      </div>
+  <%  });%>
+  </div>
+
+  <div class="medicineList">
+    <h3>Antiviral</h3>
+    <%antiviral.forEach(function(element) {%>
+      <div class="medicine">
+        <p><%= element %>, </p>
+
+      </div>
+    <%});%>
+  </div>
+
+  <div class="medicineList">
+    <h3>Contraceptives</h3>
+    <%contraceptives.forEach(function(element) {%>
+      <div class="medicine">
+        <p><%= element %>, </p>
+
+      </div>
+    <%});%>
+  </div>
+
+<%-include("partials/footer")-%>

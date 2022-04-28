@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Medi services</title>
+
+    <link rel="stylesheet" href="css/createAccount1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+                <form class="form-horizontal" role="form" action="/createAccountStore" method="post">
+                    <h2>create account</h2>
+                    <div class="form-group">
+                        <label for="medicalStoreName" class="col-sm-3 control-label">Medical Store Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="medicalStoreName" placeholder="Medical Store Name" name="medicalStoreName" class="form-control" autofocus required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="col-sm-3 control-label">Email* </label>
+                        <div class="col-sm-9">
+                            <input type="email" id="email" placeholder="Email" class="form-control" name= "email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="col-sm-3 control-label">Password*</label>
+                        <div class="col-sm-9">
+                            <input type="password" id="password" placeholder="Password" name="password" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="col-sm-3 control-label">Confirm Password*</label>
+                        <div class="col-sm-9">
+                            <input type="password" id="password" placeholder="Password" name="confirmPassword" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="storePhoneNumber" class="col-sm-3 control-label">Phone number* </label>
+                        <div class="col-sm-9">
+                            <input type="phoneNumber" id="storePhoneNumber" placeholder="Store Phone Number" name="storePhoneNumber" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="longitude" class="col-sm-3 control-label">longitude </label>
+                        <div class="col-sm-9">
+                            <input type="number" step="any" id="longitude" placeholder="store location longitude" name="longitude" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="latitude" class="col-sm-3 control-label">latitude </label>
+                        <div class="col-sm-9">
+                            <input type="number" step="any" id="latitude" placeholder="store location latitude" name="latitude" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address" class="col-sm-3 control-label">Address </label>
+                        <div class="col-sm-9">
+                            <input type="text" id="address" placeholder="store address" name="address" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-9 col-sm-offset-3">
+                            <span class="help-block">*Required fields</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Register</button>
+                </form> <!-- /form -->
+            </div> <!-- ./container -->
+  </body>
+</html>

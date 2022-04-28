@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medi World</title>
+    <link rel="stylesheet" href="css/mediSearch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+      <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("myNav");
+
+            if (x.style.display == "block")
+              x.style.display="flex";
+            else
+              x.style.display="block";
+
+            var y = document.getElementsByClassName("locate");
+
+            if (x.style.display == "block")
+              y[0].style.visibility="visible";
+            else
+              y[0].style.visibility="hidden";
+
+            y = document.getElementsByClassName("profile");
+            if (x.style.display == "block")
+              y[0].style.visibility="visible";
+            else
+              y[0].style.visibility="hidden";
+
+            y = document.getElementsByClassName("team");
+            if (x.style.display == "block")
+              y[0].style.visibility="visible";
+            else
+              y[0].style.visibility="hidden";
+
+            y = document.getElementsByClassName("logout");
+            if (x.style.display == "block")
+              y[0].style.visibility="visible";
+            else
+              y[0].style.visibility="hidden";
+
+            y = document.getElementsByClassName("addNewMedicine");
+            if (y != undefined && x.style.display == "block")
+              y[0].style.visibility="visible";
+            else
+              y[0].style.visibility="hidden";
+        }
+      </script>
+
+
+    <nav id="myNav">
+
+        <div class="locate"><img src="https://img.icons8.com/ios/50/000000/next-location.png"/> <a href="/locateNearbyStores">LocateNearbyStores</a> </div>
+        <!-- <div class="search"><img src="https://img.icons8.com/glyph-neue/64/000000/search--v1.png"/> <a href="/search">Search</a> </div> -->
+        <div class="profile"><img src="https://img.icons8.com/ios/50/000000/user-male-circle.png"/><a href="/userProfile">Profile</a> </div>
+        <div class="team"> <img src="https://img.icons8.com/ios/50/000000/teamwork--v1.png"/><a href="#">Team</a> </div>
+        <div class="logout"> <img src="https://img.icons8.com/ios/50/000000/exit.png"/><a href="/logout">Log out</a> </div>
+        <a href="#" id="ham" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+
+    </nav>

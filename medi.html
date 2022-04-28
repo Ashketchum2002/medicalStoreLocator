@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Medi service</title>
+    <link rel="stylesheet" href="css/medi.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="title"> Medi-Search </div>
+
+    <div class="container login-container">
+                <div class="row">
+                    <div class="col-md-6 login-form-1">
+                        <h3>Medical Store Login</h3>
+                        <form action="/storeLogin" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="email" placeholder="Your Email *" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="password" placeholder="Your Password *" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="btnSubmit" value="Login" />
+                            </div>
+                            <div class="form-group">
+                                <a href="#" class="ForgetPwd">Forgot Password?</a>
+                            </div>
+                            <div class="form-group">
+                                <a href="/createAccountStore" class="ForgetPwd">Don't you have an account?</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6 login-form-2">
+                        <h3>User Login</h3>
+                        <form action="/userLogin" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="userName" placeholder="Your Email *" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="password" placeholder="Your Password *" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="btnSubmit" value="Login" />
+                            </div>
+                            <div class="form-group">
+
+                                <a href="#" class="ForgetPwd" value="Login">Forgot Password?</a>
+                            </div>
+                            <div class="form-group">
+                                <a href="/createAccountUser" class="ForgetPwd">Don't you have an account?</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+  </body>
+</html>

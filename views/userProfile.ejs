@@ -1,0 +1,47 @@
+<%-include("partials/header")-%>
+
+
+
+<div class="infoContainer">
+
+    <form class="infoForm" action="/editForm" method="post">
+
+      <div class="formElements">
+        <label class="labels" for="fullName">Full Name</label>
+        <input class="userProfileInputs" type="text" name="fullName" value= <%= result.fullName %> >
+      </div>
+
+
+      <div class="formElements">
+        <label class="labels" for="email">Email</label>
+        <input class="userProfileInputs" type="text" name="email" value= <%= result.email %> readonly>
+      </div>
+
+      <div class="formElements">
+        <label class="labels" for="dob">Date of Birth</label>
+        <input class="userProfileInputs" type="date" name="dob" value= <%= result.dob %> >
+      </div>
+
+      <div class="formElements">
+        <label class="labels" for="mobile">Mobile Number</label>
+        <input class="userProfileInputs" type="text" name="mobile" value= <%= result.mobile %> >
+      </div>
+
+      <div class="formElements">
+        <label class="labels" for="height">Height (cm)</label>
+        <input class="userProfileInputs" type="text" name="height" value= <%= result.height %> >
+      </div>
+
+      <div class="formElements">
+        <label class="labels" for="weight">Weight (kg)</label>
+        <input class="userProfileInputs" type="text" name="weight" value= <%= result.weight %> >
+      </div>
+
+      <button type="submit" id="submitButtonProfile" name="submitButtonProfile">Save Changes</button>
+
+    </form>
+
+</div>
+
+
+<%-include("partials/footer")-%>

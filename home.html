@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medi World</title>
+    <link rel="stylesheet" href="css/mediSearch.css">
+    <script src="/getPosition.js"></script>
+
+    <style media="screen">
+      .aim {
+        width: 50%;
+        font-size: 20px;
+        letter-spacing: 2px;
+        line-height: 2;
+        padding: 10px;
+        margin: 0 auto;
+        border: 2px solid slateblue;
+      }
+    </style>
+
+  </head>
+
+  <body onload="getPosition()">
+
+    <script type="text/javascript">
+
+
+      function myFunction() {
+          var x = document.getElementById("myNav");
+
+          if (x.style.display == "block")
+            x.style.display="flex";
+          else
+            x.style.display="block";
+
+          var y = document.getElementsByClassName("locate");
+
+          if (x.style.display == "block")
+            y[0].style.visibility="visible";
+          else
+            y[0].style.visibility="hidden";
+
+          y = document.getElementsByClassName("search");
+          if (x.style.display == "block")
+            y[0].style.visibility="visible";
+          else
+            y[0].style.visibility="hidden";
+
+          y = document.getElementsByClassName("profile");
+          if (x.style.display == "block")
+            y[0].style.visibility="visible";
+          else
+            y[0].style.visibility="hidden";
+
+          y = document.getElementsByClassName("team");
+          if (x.style.display == "block")
+            y[0].style.visibility="visible";
+          else
+            y[0].style.visibility="hidden";
+
+          y = document.getElementsByClassName("logout");
+          if (x.style.display == "block")
+            y[0].style.visibility="visible";
+          else
+            y[0].style.visibility="hidden";
+      }
+    </script>
+
+
+  <nav id="myNav">
+
+      <div class="locate"><img src="https://img.icons8.com/ios/50/000000/next-location.png"/> <a href="/locateNearbyStores">LocateNearbyStores</a> </div>
+      <!-- <div class="search"><img src="https://img.icons8.com/glyph-neue/64/000000/search--v1.png"/> <a href="/search">Search</a> </div> -->
+      <div class="profile"><img src="https://img.icons8.com/ios/50/000000/user-male-circle.png"/><a href="/userProfile">Profile</a> </div>
+      <div class="team"> <img src="https://img.icons8.com/ios/50/000000/teamwork--v1.png"/><a href="#">Team</a> </div>
+      <div class="logout"> <img src="https://img.icons8.com/ios/50/000000/exit.png"/><a href="/logout">Log out</a> </div>
+      <a href="#" id="ham" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+
+  </nav>
+
+    <div class="aim">
+      <p>We know that everyone has to go to a medical store and look if the medicine required by them is available or not.
+      This results in wastage of physical strength and time.</p>
+
+      <p>To overcome this problem, we have created a web application
+      to search for the nearby stores where the user's required medicine is present or not.</p>
+
+      <p style="color: slateblue">Click on the button below to locate all the stores
+         which are at a radius of 5km from your current location.</p>
+
+      <p style="color: red">After clicking on the button below you will be redirected to another page where you can also enter a medicine name.
+      And after clicking on submit, only those stores with that particular medicine will be listed.</p>
+    </div>
+
+
+    <form id="posForm" class="getlocationform" action="/getlocation" method="post" class="content">
+
+      <input type="hidden" id="longitude" name="longitude" value=0>
+      <input type="hidden" id="latitude" name="latitude" value=0>
+
+      <script type="text/javascript">
+
+      // ********************** working after 4 seconds of page load
+
+        function getPosition() {
+          navigator.geolocation.getCurrentPosition(function (position) {
+            document.getElementById("longitude").value = position.coords.longitude;
+            document.getElementById("latitude").value = position.coords.latitude;
+          });
+        }
+
+      </script>
+
+      <button id="submitButton" type="submit" name="button">Locate Nearby Stores</button>
+
+    </form>
+
+
+    <footer>
+      <!-- <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Gmail</a></li><br>
+        <div class="copyright">
+          © pillabachas 2022-
+        </div><br>
+      </ul> -->
+
+      <div>
+        <img class="facebook" src="https://img.icons8.com/doodle/48/000000/facebook-new.png"/>
+      </div>
+
+      <div>
+        <img class="instagram" src="https://img.icons8.com/plasticine/100/000000/instagram-new--v2.png"/>
+      </div>
+
+      <div>
+          <img class="gmail" src="https://img.icons8.com/plasticine/100/000000/gmail-new.png"/>
+      </div>
+
+      <div>
+        <img class="twitter" src="https://img.icons8.com/color/48/000000/twitter-circled--v1.png"/>
+      </div>
+
+
+
+    </footer>
+
+  </body>
+
+</html>

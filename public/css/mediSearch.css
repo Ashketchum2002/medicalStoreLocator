@@ -1,0 +1,575 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+body {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  clear: both;
+  display: table;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#searchButton {
+  width: 100px;
+  height: 40px;
+  background-color: lightgreen;
+  font-size: 18px;
+  box-shadow: 5px 5px 18px black;
+  border-radius: 10px;
+  border: 2px solid lightgreen;
+}
+
+#searchButton:hover {
+  color: slateblue;
+}
+
+#searchButton:active {
+  transform: translateY(2px);
+}
+
+#submitButton {
+  border: 2px solid #0062cc;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.medicineList {
+  margin: 10px;
+  border: 2px solid #0062cc;
+  padding: 10px;
+  max-width: 90%;
+  position: relative;
+  left: 4%;
+  min-height: 100px;
+}
+
+.searchBar {
+  margin: 20px;
+  margin-left: 25%;
+  width: 50%;
+  height: 40px;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-family:monospace;
+  border: 2px solid slateblue;
+  border-radius: 5px;
+}
+
+.addNewMedicine {
+  margin-top:3px;
+}
+
+.addNewMedicine img {
+  width: 34px;
+  height: 35px;
+}
+
+.content {
+  min-height: calc(100vh - 70px);
+}
+
+#myNav {
+  background-image: linear-gradient(to right, #0062cc, lightgreen);
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#myNav div {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+#myNav div a {
+  position: relative;
+  bottom: 10px;
+  margin-left: 5px;
+}
+
+#ham {
+  color: black;
+}
+
+#ham:hover {
+  color: orange;
+}
+
+/* nav ul {
+  background-image: linear-gradient(to right, #0062cc, lightgreen);
+  list-style-type: none;
+} */
+
+/* nav ul li {
+  display: inline-block;
+  padding: 20px;
+  margin-right: 2%;
+} */
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+a:hover {
+  color: black;
+}
+
+.right {
+  float: right;
+}
+
+.getlocationform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.getlocationform button {
+  padding: 10px;
+  background-color: #0062cc;
+  font-size: 1.2rem;
+  color: white;
+  box-shadow: 2px 2px 18px slateblue;
+}
+
+.getlocationform button:hover {
+  color: black;
+}
+
+.getlocationform button:active {
+  transform: translateY(2px);
+}
+
+.store {
+  padding: 10px;
+  max-width: 90%;
+  border-radius: 10px;
+  border: 2px groove #0062cc;
+  line-height: 2;
+  letter-spacing: 1.5px;
+  margin: 0 auto 0 auto;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: #0062cc;
+}
+
+span {
+  color: #9342f5;
+}
+
+footer {
+  justify-content: center;
+  background-image: linear-gradient(to right, #0062cc, lightgreen);
+  display: flex;
+  width: 100%;
+  position: sticky;
+  height: 100px;
+  margin-top:10px;
+
+}
+
+
+
+footer div {
+  padding: 10px;
+}
+
+/* footer ul {
+  display: inline-block;
+  background-image: linear-gradient(to right, #0062cc, lightgreen);
+  width: 100%;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 20px;
+  margin-right: 2%;
+} */
+
+
+/* colorful icons */
+
+/* .team {
+  position: relative;
+  top: 15px;
+}
+
+.logout {
+  position: relative;
+  bottom: 4px;
+}
+
+.profile {
+  position: relative;
+  bottom: 10px;
+}
+
+.profile {
+  position: relative;
+  bottom: 5px;
+}
+
+.profile a {
+  position: relative;
+  bottom: 15px;
+}
+
+.locate {
+  position: relative;
+  top: 23px;
+}
+
+.locate a {
+  margin-left: 3px;
+}
+
+.search {
+  position: relative;
+  bottom: 5px;
+}
+
+.search img {
+  width: 20%;
+  height: 60%;
+} */
+
+/* colorful icons */
+
+
+/* black and white icons */
+
+.team img {
+  width: 35%;
+  bottom: 5px;
+  position: relative;
+  bottom: 3px;
+}
+
+.team a {
+  position: relative;
+}
+
+.logout {
+  position: relative;
+  top: 7.5px;
+}
+
+.logout img {
+  width: 22.5%;
+  position: relative;
+  bottom: 3px;
+}
+
+.profile {
+
+}
+
+.profile img {
+  width: 30%;
+}
+
+.profile a {
+
+}
+
+.locate a {
+    margin-left: 0;
+}
+
+.locate {
+  padding-left: 0;
+}
+
+.locate img {
+  width: 14%;
+}
+
+.search img {
+  width: 25%;
+}
+
+.search a {
+  position: relative;
+
+
+}
+
+.logout a {
+  position: relative;
+
+}
+
+
+/* black and white icons */
+
+.copyright {
+  color: white;
+}
+
+.phoneDiv {
+  display: inline-flex;
+}
+
+.phoneImage {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.address {
+  opacity: 0.5;
+}
+
+.storeNameDiv {
+  display: inline-flex;
+  max-width: 100%;
+}
+
+.storeNameImage {
+  margin-right: 20px;
+  height: 30%;
+  width: 30%;
+}
+
+.phoneDirectionDiv {
+  display: inline-block;
+}
+
+.phoneDirectionDiv img {
+    display: inline-block;
+}
+
+.phoneDirectionDiv {
+    display: flex;
+}
+
+.phoneImage {
+  width: 25%;
+  height: 80%;
+}
+
+.getDirectionImage {
+  position: relative;
+  top: 7px;
+  width: 15%;
+  height: 50%;
+}
+
+.getDirectionDiv {
+  position: absolute;
+  right: 5%;
+}
+
+a.getDirection {
+  color: black;
+}
+
+a.getDirection:hover {
+  color: #0062cc;
+}
+
+.facebook {
+  width: 50px;
+  height: 55px;
+}
+
+.instagram {
+  width: 50px;
+  height: 60px;
+}
+
+.gmail {
+  width: 50px;
+  height: 60px;
+}
+
+.twitter {
+  width: 50px;
+  height: 60px;
+}
+
+.store:last-child {
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+#ham {
+  position: relative;
+  top: 21px;
+  width: 100px;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 900px) {
+
+  nav {
+
+  }
+
+  #ham {
+    visibility:visible;
+  }
+
+  nav div {
+    padding-left: 10px;
+    visibility: hidden;
+  }
+
+  nav div a {
+
+  }
+
+  .team img {
+    width: 5%;
+  }
+
+  .team a {
+    position: relative;
+    left: 16px;
+  }
+
+  .logout {
+    position: relative;
+    top: 7.5px;
+  }
+
+  .logout img {
+    width: 4%;
+  }
+
+  .logout a {
+    position: relative;
+    left: 25px;
+  }
+
+
+  .locate {
+    padding-left: 10px;
+  }
+
+  .profile img {
+    width: 4%;
+  }
+
+  .profile a {
+    position: relative;
+    left: 25px;
+  }
+
+  .locate a {
+    position: relative;
+    left: 25px;
+  }
+
+  .locate img {
+    width: 4%;
+  }
+
+  .search img {
+    width: 4%;
+  }
+
+  /* .search {
+    position: relative;
+    top: 15px;
+  } */
+
+  .search a {
+    position: relative;
+    left: 25px;
+  }
+
+  .logout a {
+    position: relative;
+
+  }
+
+
+}
+
+/* user profile css */
+
+.infoContainer {
+  border: 2px solid slateblue;
+  width: 40%;
+
+  margin: 20px auto;
+
+  box-shadow: 5px 5px 18px slateblue;
+}
+
+.infoForm {
+  display: block;
+  justify-content: flex-start;
+  min-height: 500px;
+  margin: 20px;
+}
+
+.labels {
+  font-size: 14px;
+}
+
+
+.userProfileInputs {
+  width: 100%;
+  height: 30px;
+  border: 2px solid lightgrey;
+
+  font-size: 16px;
+  padding: 10px;
+
+  color: black;
+}
+
+
+.formElements {
+    margin: 15px;
+}
+
+#submitButtonProfile {
+  width: 50%;
+  height: 40px;
+  position: relative;
+  left: 25%;
+  font-size: 17px;
+  background-color: lightgreen;
+  border: 2px solid lightgreen;
+  box-shadow: 2px 4px 18px slateblue;
+  margin-top: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+#submitButtonProfile:hover {
+  color: white;
+}
+
+#submitButtonProfile:active {
+  transform: translateY(2px);
+}
+
+#emailProfile {
+  padding: 20px;
+}
+body {
+  margin: 0;
+}
+
+svg {
+  width: 100%;
+}

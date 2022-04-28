@@ -1,0 +1,40 @@
+<%-include("partials/header")-%>
+
+  <form class="" action="/search" method="post">
+    <input class="searchBar" type="text" name="searchBar" value="" placeholder="Enter medicine name or disease name....">
+    <input id="searchButton" type="submit" name="searchMedicine" value="Submit">
+  </form>
+
+
+  <% stores.forEach(function (element) { %>
+    <div class="store">
+
+      <div class="storeNameDiv">
+        <h1><%= element.storeName %></h1>
+      </div>
+
+
+      <div class="addressDiv">
+        <p class="address"> <span class="spanAddress" style="font-weight: bolder;">Address:</span> <%= element.address %> </p>
+      </div>
+
+      <div class="phoneDirectionDiv">
+
+        <div class="phoneDiv">
+          <img class="phoneImage" src="https://img.icons8.com/dusk/64/000000/apple-phone.png">
+          <p><%= element.phoneNumber %> </p>
+        </div>
+
+        <div class="getDirectionDiv">
+            <img class="getDirectionImage" src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/000000/external-direction-location-and-navigation-inipagistudio-mixed-inipagistudio.png">
+            <a target="_blank" href="http://maps.google.com/maps?z=12&t=m&q=loc:<%= element.location.coordinates[1] %>+<%= element.location.coordinates[0] %>" class="getDirection">Get Direction</a>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  <% }); %>
+
+<%-include("partials/footer")-%>

@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+body {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  min-height: 100%;
+  clear: both;
+  display: table;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.medicineList {
+  margin: 10px;
+  border: 2px solid #0062cc;
+  padding: 10px;
+  max-width: 90%;
+  position: relative;
+  left: 4%;
+  min-height: 100px;
+}
+
+.addNewMedicine {
+  margin-top:3px;
+}
+
+.addNewMedicine img {
+  width: 34px;
+  height: 35px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+a:hover {
+  color: black;
+}
+
+.right {
+  float: right;
+}
+
+
+h1 {
+  color: #0062cc;
+}
+
+span {
+  color: #9342f5;
+}
+
+footer {
+  justify-content: center;
+  background-image: linear-gradient(to right, #0062cc, lightgreen);
+  display: flex;
+  width: 100%;
+  position: sticky;
+  height: 100px;
+  margin-top:10px;
+
+}
+
+footer div {
+  padding: 10px;
+}
+
+.team img {
+  width: 35%;
+  bottom: 5px;
+  position: relative;
+  bottom: 3px;
+}
+
+.team a {
+  position: relative;
+}
+
+.logout {
+  position: relative;
+  top: 7.5px;
+}
+
+.logout img {
+  width: 22.5%;
+  position: relative;
+  bottom: 3px;
+}
+
+.profile {
+
+}
+
+.profile img {
+  width: 30%;
+}
+
+.profile a {
+
+}
+
+.logout a {
+  position: relative;
+
+}
+
+.facebook {
+  width: 50px;
+  height: 55px;
+}
+
+.instagram {
+  width: 50px;
+  height: 60px;
+}
+
+.gmail {
+  width: 50px;
+  height: 60px;
+}
+
+.twitter {
+  width: 50px;
+  height: 60px;
+}
+
+
+#myNav {
+  background-image: linear-gradient(to right, #0062cc, lightgreen);
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#myNav div {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+#myNav div a {
+  position: relative;
+  bottom: 10px;
+  margin-left: 5px;
+}

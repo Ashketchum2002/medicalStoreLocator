@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Medicine Entry</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medi World</title>
+  <link rel="stylesheet" href="css/storeCss.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body style="font-family: 'Poppins', sans-serif;">
+
+  <nav id="myNav">
+      <!-- <div class="search"> <img src="https://img.icons8.com/cute-clipart/64/000000/search.png"/> <a href="#">SearchMedicines</a> </div>
+      <div class="locate"><img style="width:20%;" src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-pin-medical-kiranshastry-lineal-color-kiranshastry.png"/> <a href="#">LocateNearbyStores</a> </div>
+      <div class="profile"><img style="width:35%;height:65%;" src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-user-shopping-mall-xnimrodx-lineal-color-xnimrodx.png"/><a href="#">Profile</a> </div>
+      <div class="team"> <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-team-achievements-flaticons-flat-flat-icons.png"/><a href="#">Team</a> </div>
+      <div class="logout"> <img src="https://img.icons8.com/external-anggara-filled-outline-anggara-putra/32/000000/external-log-out-ecommerce-anggara-filled-outline-anggara-putra.png"/><a href="#">Log out</a> </div> -->
+
+      <div class="addNewMedicine"><img src="https://img.icons8.com/ios/30/000000/add--v1.png"/> <a style="color: white;position:relative;top:1px;" href="/addNewMedicine">AddNewMedicine</a> </div>
+      <div class="profile" style="position:relative;top:4px"><img src="https://img.icons8.com/ios/50/000000/user-male-circle.png"/><a style="color: white;position:relative;top:3px;" href="#">Profile</a> </div>
+      <div class="team" style="position:relative;top:3px"> <img src="https://img.icons8.com/ios/50/000000/teamwork--v1.png"/><a style="color: white;position:relative;top:3px;" href="#">Team</a> </div>
+      <div class="logout" style="position:relative;top:7px"> <img src="https://img.icons8.com/ios/50/000000/exit.png"/><a style="color: white;position:relative;top:0.5px;" href="/logout">Log out</a> </div>
+
+
+  </nav>
+
+
+  <div class="container" style="width: 50%;margin-top: 40px;">
+
+    <form class="well form-horizontal" action=" " method="post" id="contact_form">
+      <fieldset>
+
+        <legend>
+          <center>
+            <h2><b>New Medicine Entry</b></h2>
+          </center>
+        </legend><br>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Medicine Name</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i ></i></span>
+              <input name="medicineName" placeholder="Medicine Name" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Medicine's Company Name</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i ></i></span>
+              <input name="medicineCompany" placeholder="Medicine Company" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Medicine Class</label>
+          <div class="col-md-4 selectContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+              <select name="medicineClass" class="form-control selectpicker">
+                <option value="">Select Medicine Class</option>
+                <option>anti pyretics</option>
+                <option>analgesics</option>
+                <option>antiseptics</option>
+                <option>anti malarial</option>
+                <option>anaesthetics</option>
+                <option>anti inflammatory</option>
+                <option>antidotes</option>
+                <option>anti bacterials</option>
+                <option>anti fungal</option>
+                <option>anti viral</option>
+                <option>vaccines</option>
+                <option>contraseptives</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">chemical composition</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i ></i></span>
+              <input name="chemicalComposition" placeholder="Enter medicine's chemical composition" class="form-control" type="textarea">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Disease</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i ></i></span>
+              <input name="disease" placeholder="Disease Name" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Stock</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i ></i></span>
+              <input name="stock" placeholder="stock" class="form-control" type="number">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Cost</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i ></i></span>
+              <input name="cost" placeholder="price per tablet" class="form-control" type="number">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label"></label>
+          <div class="col-md-4"><br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn" style="background-color: lightgreen">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspADD <span
+                class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+          </div>
+        </div>
+
+      </fieldset>
+    </form>
+  </div>
+  </div>
+</body>
+
+</html>
